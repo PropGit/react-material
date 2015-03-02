@@ -4,5 +4,5 @@ node_modules/*
 assets/
 
 # don't check in compiled components
-components/*.js
-views/*.js
+# components/*.js
+# views/*.js
