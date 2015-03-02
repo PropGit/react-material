@@ -29,7 +29,7 @@ var Card = React.createClass({
   render: function() {
     var props  = this.props;
     var styles = CardStyles;
-    return <div styles={styles.normalCardStyle}>
+    return <div styles={[styles.normalCardStyle, props.styles]}>
       <Shadow size={1} />
       {props.title &&
         <h3 styles={styles.headerStyle}>{props.title}</h3>
