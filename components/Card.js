@@ -32,7 +32,7 @@ var Card = React.createClass({
     var styles = CardStyles;
     return React.createElement(
       "div",
-      { styles: styles.normalCardStyle },
+      { styles: [styles.normalCardStyle, props.styles] },
       React.createElement(Shadow, { size: 1 }),
       props.title && React.createElement(
         "h3",
