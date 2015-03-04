@@ -39,6 +39,9 @@ var SideNavigation = React.createClass({
     if (props.show) {
       sideNavigationStyles.push(styles.showSideNavStyle);
     }
+    if (props.styles) {
+      sideNavigationStyles.push(props.styles);
+    }
     return <div styles={sideNavigationStyles}>
       {this.props.children}
     </div>;
