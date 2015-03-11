@@ -10,7 +10,7 @@ export default class Card extends React.Component {
   render() {
     var props  = this.props;
     var styles = CardStyles;
-    return <div styles={styles.normalCardStyle}>
+    return <div styles={[styles.normalCardStyle, props.styles]}>
       <Shadow size={1} />
       {props.title &&
         <h3 styles={styles.headerStyle}>{props.title}</h3>
