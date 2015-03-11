@@ -34,6 +34,9 @@ var SideNavigation = (function (_React$Component) {
         if (props.show) {
           sideNavigationStyles.push(styles.showSideNavStyle);
         }
+        if (props.styles) {
+          sideNavigationStyles.push(props.styles);
+        }
         return React.createElement(
           "div",
           { styles: sideNavigationStyles },
