@@ -52,11 +52,15 @@ var TextField = React.createClass({
       focusing: true };
   },
 
+  componentDidMount: function componentDidMount() {
+    this._textField = React.findDOMNode(this.refs.textField);
+  },
+
   render: function render() {
     var props = this.props;
     var styles = TextFieldStyles;
     var propStyles = props.styles || {};
-    var textField = this.refs.textField;
+    var textField = this._textField;
     var scrollLeft = 0;
     var scrollWidth = -1;
     var width = -1;
@@ -78,10 +82,9 @@ var TextField = React.createClass({
     }
 
     if (textField) {
-      var textfieldDOMNode = React.findDOMNode(textField);
-      scrollWidth = textfieldDOMNode.scrollWidth;
-      scrollLeft = textfieldDOMNode.scrollLeft;
-      width = textfieldDOMNode.offsetWidth;
+      scrollWidth = textField.scrollWidth;
+      scrollLeft = textField.scrollLeft;
+      width = textField.offsetWidth;
     }
 
     var containerStyling = [styles.containerStyling];
@@ -210,7 +213,7 @@ var TextField = React.createClass({
     if (value !== undefined) {
       return value;
     } else if (this.isMounted()) {
-      return React.findDOMNode(this.refs.textField).value;
+      return this._textField.value;
     } else {
       return "";
     }
