@@ -6,7 +6,9 @@ import StyleSheet from 'react-style';
 export default class List extends React.Component {
 
   render() {
-    return <div styles={ListStyles.normalListStyle}>
+    var props = this.props;
+    var styles = ListStyles;
+    return <div styles={[styles.normalListStyle, props.styles]}>
       {this.props.children}
     </div>;
   }
