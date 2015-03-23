@@ -26,9 +26,11 @@ var List = (function (_React$Component) {
   _createClass(List, {
     render: {
       value: function render() {
+        var props = this.props;
+        var styles = ListStyles;
         return React.createElement(
           "div",
-          { styles: ListStyles.normalListStyle },
+          { styles: [styles.normalListStyle, props.styles] },
           this.props.children
         );
       }
