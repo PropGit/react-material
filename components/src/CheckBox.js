@@ -116,7 +116,7 @@ var CheckBoxStyles = StyleSheet.create({
     display: 'block',
     outline: 'none',
     position: 'relative',
-    webkitTapHighlightColor: 'rgba(0,0,0,0)'
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)'
   },
 
   childStyle: {

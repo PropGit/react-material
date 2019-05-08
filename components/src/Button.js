@@ -84,7 +84,7 @@ export default class Button extends React.Component {
 var ButtonStyles = StyleSheet.create({
 
   normalButtonStyle: {
-    webkitTapHighlightColor: 'rgba(0,0,0,0)',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     cursor: 'pointer',
     position: 'relative',
     height: Sizes.Button.height - 2 * 9,

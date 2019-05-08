@@ -207,7 +207,7 @@ var AppBarStyles = StyleSheet.create({
 
   navButtonStyle: {
     height: 26,
-    webkitTapHighlightColor: "rgba(0,0,0,0)",
+    WebkitTapHighlightColor: "rgba(0,0,0,0)",
     position: "fixed",
     width: 24,
     display: "inline-block",

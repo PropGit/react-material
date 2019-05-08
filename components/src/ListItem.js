@@ -40,7 +40,7 @@ export default class ListItem extends React.Component{
 var ListItemStyles = StyleSheet.create({
 
   normalListItemStyle: {
-    webkitTapHighlightColor: 'rgba(0,0,0,0)',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     boxSizing: 'border-box',
     cursor: 'pointer',
     overflow: 'hidden',

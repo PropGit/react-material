@@ -87,7 +87,7 @@ module.exports = ToggleButton;
 var ToggleButtonStyles = StyleSheet.create({
 
   normalStyle: {
-    webkitTapHighlightColor: "rgba(0,0,0,0)",
+    WebkitTapHighlightColor: "rgba(0,0,0,0)",
     cursor: "pointer",
     display: "block",
     position: "relative"
@@ -96,7 +96,7 @@ var ToggleButtonStyles = StyleSheet.create({
   lineStyle: {
     backgroundColor: Colors.grey.P700,
     height: "1px",
-    webkitTapHighlightColor: "rgba(0,0,0,0)",
+    WebkitTapHighlightColor: "rgba(0,0,0,0)",
     left: 0,
     position: "absolute",
     top: "10px",

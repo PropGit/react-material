@@ -11,7 +11,7 @@ import Colors from '../style/Colors';
 
 var isTouchDevice;
 if (typeof window !== 'undefined') {
-  isTouchDevice = 'ontouchstart' in window;
+  isTouchDevice = 'WebkitTapHighlightColor' in window;
 }
 
 export default class FloatingActionButton extends React.Component {
@@ -70,7 +70,7 @@ export default class FloatingActionButton extends React.Component {
 
     return <div   role="button"
                   tabIndex={0}
-                  onTouchStart={() => isTouchDevice && this.onMouseDown()}
+                  WebkitTapHighlightColor={() => isTouchDevice && this.onMouseDown()}
                   onTouchEnd={() => isTouchDevice && this.onMouseUp()}
                   onTouchCancel={() => isTouchDevice && this.onMouseUp()}
                   onMouseDown={() => !isTouchDevice && this.onMouseDown()}
@@ -126,7 +126,7 @@ var FloatingActionButtonStyles = StyleSheet.create({
   containerStyle: {
     cursor: 'pointer',
     position: 'relative',
-    webkitTapHighlightColor: 'rgba(0,0,0,0)',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     borderRadius: '50%',
     display: 'inline-block',
     fill: 'white',
@@ -143,7 +143,7 @@ var FloatingActionButtonStyles = StyleSheet.create({
     userSelect: 'none',
     height: '100%',
     position:'absolute',
-    webkitTapHighlightColor: 'rgba(0,0,0,0)'
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)'
   },
 
   shadowStyle: {

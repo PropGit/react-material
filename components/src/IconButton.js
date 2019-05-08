@@ -30,7 +30,7 @@ var IconButtonStyles = StyleSheet.create({
     padding: 8,
     position: 'relative',
     width: 24,
-    webkitTapHighlightColor: 'rgba(0,0,0,0)',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     outline: 'none'
   },
 

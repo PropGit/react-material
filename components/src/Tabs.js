@@ -79,7 +79,7 @@ var TabsStyles = StyleSheet.create({
   },
 
   tabTitlesContainerStyle: {
-    webkitTapHighlightColor: 'rgba(0,0,0,0)',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     backgroundColor: Colors.cyan.P500,
     lineHeight: '48px',
     margin: 0,

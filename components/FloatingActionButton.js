@@ -172,7 +172,7 @@ var FloatingActionButtonStyles = StyleSheet.create({
   containerStyle: {
     cursor: "pointer",
     position: "relative",
-    webkitTapHighlightColor: "rgba(0,0,0,0)",
+    WebkitTapHighlightColor: "rgba(0,0,0,0)",
     borderRadius: "50%",
     display: "inline-block",
     fill: "white",
@@ -189,7 +189,7 @@ var FloatingActionButtonStyles = StyleSheet.create({
     userSelect: "none",
     height: "100%",
     position: "absolute",
-    webkitTapHighlightColor: "rgba(0,0,0,0)"
+    WebkitTapHighlightColor: "rgba(0,0,0,0)"
   },
 
   shadowStyle: {
